@@ -1,0 +1,6 @@
+numpy==1.19.5
+opencv_python==4.6.0.66
+pandas==1.1.5
+scipy==1.5.4
+tensorboardX==2.5.1
+torch==1.5.0
