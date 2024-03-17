@@ -18,6 +18,7 @@ def train(model, train_loader, optimizer, device, epoch, max_iters=200):
 
         loss.backward()
         optimizer.step()
+        optimizer.zero_grad()
         end_time = time.time()
         duration = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
         print('train | epoch = {}, iter = [{}|{}], loss = {}, time = {}'.format(epoch, iter_id, max_iters,
